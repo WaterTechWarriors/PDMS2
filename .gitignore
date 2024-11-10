@@ -23,4 +23,4 @@
    venv/lib/python3.11/site-packages/triton/
 
    # Ignore config.ini file
-   config.ini
+   config.iniconfig.ini
