@@ -1,0 +1,35 @@
+Document Element Type:
+
+Formula	            An element containing formulas in a document.
+FigureCaption	    An element for capturing text associated with figure captions.
+NarrativeText	    NarrativeText is an element consisting of multiple, well-formulated sentences. This excludes elements such titles, headers, footers, and captions.
+ListItem	        ListItem is a NarrativeText element that is part of a list.
+Title	            A text element for capturing titles.
+Address	            A text element for capturing physical addresses.
+EmailAddress	    A text element for capturing email addresses.
+Image	            A text element for capturing image metadata.
+PageBreak	        An element for capturing page breaks.
+Table	            An element for capturing tables.
+Header	            An element for capturing document headers.
+Footer	            An element for capturing document footers.
+CodeSnippet	        An element for capturing code snippets.
+PageNumber	        An element for capturing page numbers.
+UncategorizedText	Base element for capturing free text from within document.
+
+All document types return the following metadata fields when the information is available from the source file:
+
+Metadata field name	        Description
+-----------------------     ----------------------------------------
+filename	                Filename
+file_directory	            File directory
+last_modified	            Last modified Date
+filetype	                File type
+coordinates	                XY Bounding Box Coordinates. See notes below for further details about the bounding box.
+parent_id	                Element Hierarchy. parent_id may be used to infer where an element resides within the overall hierarchy of a document. For instance, a NarrativeText element may have a Title element as a parent (a “sub-title”), which in turn may have another Title element as its parent (a “title”).
+category_depth	            Element depth relative to other elements of the same category. Category depth is the depth of an element relative to other elements of the same category. It’s set by a document partitioner and enables the hierarchy post-processor to compute more accurate hierarchies. Category depth may be set using native document hierarchies, e.g. reflecting <H1>, <H2>, or <H3> tags within an HTML document or the indentation level of a bulleted list item in a Word document.
+text_as_html	            HTML representation of extracted tables. Only applicable to table elements.
+languages	                Document Languages. At document level or element level. List is ordered by probability of being the primary language of the text.
+emphasized_text_contents	Emphasized text (bold or italic) in the original document.
+emphasized_text_tags	    Tags on text that is emphasized in the original document.
+is_continuation	            True if element is a continuation of a previous element. Only relevant for chunking, if an element was divided into two due to max_characters.
+detection_class_prob	    Detection model class probabilities. From unstructured-inference, hi-res strategy.

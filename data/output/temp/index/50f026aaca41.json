@@ -1,0 +1,30 @@
+{
+  "identifier": "/root/WaterTech/AdvancedRAGingest/data/output/01_partitioned/Millennium Li_33001HL.OP24.7L_1.2.2024_Sample.pdf.json",
+  "connector_type": "local",
+  "source_identifiers": {
+    "filename": "Millennium Li_33001HL.OP24.7L_1.2.2024_Sample.pdf.json",
+    "fullpath": "/root/WaterTech/AdvancedRAGingest/data/output/01_partitioned/Millennium Li_33001HL.OP24.7L_1.2.2024_Sample.pdf.json",
+    "rel_path": "Millennium Li_33001HL.OP24.7L_1.2.2024_Sample.pdf.json"
+  },
+  "doc_type": "file",
+  "metadata": {
+    "url": null,
+    "version": null,
+    "record_locator": {
+      "path": "/root/WaterTech/AdvancedRAGingest/data/output/01_partitioned/Millennium Li_33001HL.OP24.7L_1.2.2024_Sample.pdf.json"
+    },
+    "date_created": null,
+    "date_modified": "1731203434.8954868",
+    "date_processed": "1731203434.9637392",
+    "permissions_data": [
+      {
+        "mode": 33188
+      }
+    ],
+    "filesize_bytes": 222034
+  },
+  "additional_metadata": {},
+  "reprocess": false,
+  "local_download_path": "/root/WaterTech/AdvancedRAGingest/data/output/01_partitioned/Millennium Li_33001HL.OP24.7L_1.2.2024_Sample.pdf.json",
+  "display_name": null
+}
