@@ -21,3 +21,6 @@
    venv/lib/python3.11/site-packages/nvidia/
    venv/lib/python3.11/site-packages/torch/
    venv/lib/python3.11/site-packages/triton/
+
+   # Ignore config.ini file
+   config.ini
